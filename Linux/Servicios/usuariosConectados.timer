@@ -1,0 +1,18 @@
+#Autor: Luis Fernando Valverde Cardenas
+#Objetivo: practicar con los timers unidos a su respectivo servicio
+
+[Unit]
+#Descripcion del temporizador
+Description=Temporizador de 1m para el servicio usuariosConectados.service
+#Este temporizador requiere del servicio ...
+Requires=usuariosConectados.service
+
+[Timer]
+#Ejecutamos el servicio ...
+Unit=usuariosConectados.service
+#Se ejecutara en este caso cada minuto
+OnCalendar=*:0/01
+
+[Install]
+#Esperara a que el objetivo de los temporizadores este activo para ejecutarse
+WantedBy=timers.target

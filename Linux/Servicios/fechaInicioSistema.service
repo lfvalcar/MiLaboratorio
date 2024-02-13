@@ -1,0 +1,21 @@
+#Autor: Luis Fernando Valverde Cardenas
+#Objetivo: aprender a crear unidades de servicios
+
+[Unit]
+#Descripcion del servicio ...
+Description=Reporte de la fecha a la que se inició el sistema
+#Requiere del temporizador ... para funcionar
+Wants=fechaInicioSistema.timer
+
+[Service]
+#Tipo del servicio
+Type=simple
+#Usuario que va a ejecutar el procedimiento del servicio
+User=servicial
+#Lo que se va a ejecutar
+ExecStart=/bin/bash /srv/scripts/fechaInicioSistema.sh
+
+
+[Install]
+#Esperamos a que el objetivo ... este activo
+WantedBy=multi-user.target
