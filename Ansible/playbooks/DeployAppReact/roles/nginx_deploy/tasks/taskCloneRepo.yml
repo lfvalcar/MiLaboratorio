@@ -1,0 +1,9 @@
+--- 
+
+- name: Desactivar certificados
+  command: git config --global http.sslVerify false
+
+- name: Clonar repositorio
+  git:
+    repo: https://github.com/morgadodesarrollador/Autocaravaneando.git
+    dest: "{{projecto}}"

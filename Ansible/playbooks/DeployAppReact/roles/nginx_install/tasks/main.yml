@@ -1,0 +1,5 @@
+--- 
+
+- include_tasks: taskUpdate.yml
+- include_tasks: taskInstall.yml
+- include_tasks: taskStart.yml

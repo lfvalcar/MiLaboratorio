@@ -1,0 +1,12 @@
+---
+
+- name: Crear directorio en el servidor remoto
+  file:
+    path: /var/www/Autocaravaneando
+    state: directory
+
+- name: Copy build to /var/www
+  copy:
+    src: "{{ projecto }}/build/"
+    dest: /var/www/Autocaravaneando/
+    remote_src: true

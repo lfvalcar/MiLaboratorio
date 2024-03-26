@@ -1,0 +1,6 @@
+--- 
+
+- name: Update System
+  apt:
+    name: "*"
+    state: latest

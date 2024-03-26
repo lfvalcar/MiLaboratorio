@@ -1,0 +1,7 @@
+--- 
+
+- name: Remove files
+  file:
+    path: "{{ item }}"
+    state: absent
+  loop: "{{ items }}"

@@ -1,0 +1,13 @@
+---
+
+- hosts: PracticasHLC
+  remote_user: adminsrv
+  vars_files:
+    - defaults/environment.yml
+  become: true
+  roles:
+    - role: nginx_install
+    - role: nginx_config
+    - role: nginx_deploy
+    
+  

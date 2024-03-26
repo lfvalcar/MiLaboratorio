@@ -1,0 +1,9 @@
+# Carpetas claves públicas utilizadas
+Docker/Keys
+*.pub
+
+# Carpeta volúmenes utilizados
+Docker/Volumes
+
+# Variables entorno
+environment.yml

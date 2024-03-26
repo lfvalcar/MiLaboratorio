@@ -1,0 +1,6 @@
+--- 
+
+- name: Copiar sitio
+  template:
+    src: default.j2
+    dest: /etc/nginx/sites-available/default.conf

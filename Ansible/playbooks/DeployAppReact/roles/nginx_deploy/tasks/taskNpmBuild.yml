@@ -1,0 +1,7 @@
+--- 
+
+- name: npm build
+  command: npm run build
+  args:
+      chdir: "{{ projecto }}"
+    

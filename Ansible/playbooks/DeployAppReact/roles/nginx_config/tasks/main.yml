@@ -1,0 +1,5 @@
+--- 
+
+- include_tasks: taskRemoveSite.yml
+- include_tasks: taskCopySite.yml
+- include_tasks: taskActiveSite.yml

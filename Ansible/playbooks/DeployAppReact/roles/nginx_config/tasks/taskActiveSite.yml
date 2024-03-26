@@ -1,0 +1,7 @@
+---
+
+- name: Crear enlace simbólico en sites-enabled
+  file:
+    src: /etc/nginx/sites-available/default.conf 
+    dest: /etc/nginx/sites-enabled/default.conf
+    state: link

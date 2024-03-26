@@ -1,0 +1,7 @@
+---
+
+- include_tasks: taskCloneRepo.yml
+- include_tasks: taskNpmInstall.yml
+- include_tasks: taskNpmBuild.yml
+- include_tasks: taskCopyBuild.yml
+- include_tasks: taskRestart.yml

@@ -1,0 +1,5 @@
+--- 
+
+- name: npm install
+  npm:
+    path: "{{projecto}}"
